@@ -35,7 +35,14 @@ Next.js uses an internal header `x-middleware-subrequest` to prevent recursive r
 
 The exploit adds the `x-middleware-subrequest: middleware` header to bypass Next.js middleware authentication checks. 
 
+<img width="1013" alt="image" src="https://github.com/user-attachments/assets/cf9d412f-509b-494a-9f64-5d88643c56d4" />
+
+
 The middleware in this demo app redirects unauthenticated users away from protected routes, but with the exploit header, this check can be bypassed.
+
+<img width="1345" alt="image" src="https://github.com/user-attachments/assets/82f48e22-e4c7-4d5d-91dd-62207a697079" />
+
+<img width="1345" alt="image" src="https://github.com/user-attachments/assets/b532c43f-8f6b-472b-a379-88e7a0ecd338" />
 
 ## Fix
 
