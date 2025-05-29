@@ -5,9 +5,7 @@ export async function POST(req: NextRequest) {
   const { username, password } = body
 
   const validUsers: Record<string, string> = {
-    admin: 'admin123',
-    user1: 'password1',
-    telkomathon6: 'claudia94'
+    admin: '@8*!AQGt#zMtbf$JeYuds5Hz'
   }
 
   if (validUsers[username] === password) {
